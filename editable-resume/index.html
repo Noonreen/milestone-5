@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume with Shareable Link</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="resume-container">
+    <h1>Editable Resume</h1>
+    
+    <div class="section">
+      <h2>Personal Information</h2>
+      <p id="name" contenteditable="true">John Doe</p>
+      <p id="email" contenteditable="true">john.doe@example.com</p>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p id="education" contenteditable="true">Bachelor of Science in Computer Science</p>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <p id="work" contenteditable="true">Software Engineer at XYZ Corp</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <p id="skills" contenteditable="true">JavaScript, TypeScript, HTML, CSS</p>
+    </div>
+
+    <!-- Save and Share buttons -->
+    <button id="saveBtn">Save Changes</button>
+    <button id="generateLinkBtn">Generate Shareable Link</button>
+    <button id="downloadPdfBtn">Download as PDF</button>
+    
+    <p id="shareLink" style="display:none;"></p> 
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
